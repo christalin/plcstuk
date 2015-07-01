@@ -1,34 +1,13 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @event.name %>
-</p>
-
-<p>
-  <strong>Eventdate:</strong>
-  <%= @event.eventdate %>
-</p>
-
-<p>
-  <strong>Uploadedby:</strong>
-  <%= @event.uploadedby %>
-</p>
-
-<p>
-  <strong>Conductedby:</strong>
-  <%= @event.conductedby %>
-</p>
-
-<p>
-  <strong>Phonenos:</strong>
-  <%= @event.phonenos %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @event.description %>
-</p>
+<div class="row">
+  <div class="col-md-6">
+    <h3><%= @event.name %></h3>
+    <h3><%= @event.eventdate %></h3>
+    <h3><%= @event.uploadedby %></h3>
+    <p><%= @event.conductedby %></p>
+    <p><%= @event.phonenos %></p>
+    <p><%= @event.description %></p>
+  </div>  
+</div>  
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
