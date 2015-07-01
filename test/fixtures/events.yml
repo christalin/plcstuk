@@ -4,14 +4,14 @@ one:
   name: MyString
   eventdate: MyString
   uploadedby: MyString
-  conductedby: MyString
-  phonenos: MyString
-  description: MyString
+  conductedby: MyText
+  phonenos: MyText
+  description: MyText
 
 two:
   name: MyString
   eventdate: MyString
   uploadedby: MyString
-  conductedby: MyString
-  phonenos: MyString
-  description: MyString
+  conductedby: MyText
+  phonenos: MyText
+  description: MyText
