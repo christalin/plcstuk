@@ -1,16 +1,14 @@
-<%= simple_form_for(@event) do |f| %>
+<%= simple_form_for(@event, html: {class: "form-signin"}) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :eventdate %>
-    <%= f.input :uploadedby %>
-    <%= f.input :conductedby %>
-    <%= f.input :phonenos %>
-    <%= f.input :description %>
-  </div>
+  
+    <%= f.input :name, required: true, label: false, placeholder: "Event Name", input_html: {class: "form-control"} %>
+    <%= f.input :eventdate, required: true, label: false, placeholder: "Event Date", input_html: {class: "form-control"}  %>
+    <%= f.input :uploadedby, required: true, label: false, placeholder: "Uploadedby", input_html: {class: "form-control"}  %>
+    <%= f.input :conductedby, required: true, label: false, placeholder: "Conductedby", input_html: {class: "form-control"}  %>
+    <%= f.input :phonenos, required: true, label: false, placeholder: "Phone Nos", input_html: {class: "form-control"}  %>
+    <%= f.input :description, required: true, label: false, placeholder: "Description", input_html: {class: "form-control", rows: 50}  %>
+  
+    <%= f.button :submit, class: "btn btn-primary btn-block" %>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
 <% end %>
