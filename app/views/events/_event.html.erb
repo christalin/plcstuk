@@ -1,6 +1,22 @@
-<div class="row">
-	<div class="caption">
-		<h3><strong><%= link_to event.name, event_path(event) %></strong></h3>
-    </div>	
-</div>	
+
+
+
+<table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Event Name</th>
+          <th>Event Date</th>
+          <th>Uploadedby</th>
+        </tr>
+      </thead>
+      <tbody>
+      	<% @events.each do |event| %>
+        <tr>
+          <td><%= link_to event.name, event_path(event) %></td>
+          <td><%= event.eventdate %> ago</td>
+          <td><%= event.uploadedby %></td>
+        </tr>
+        <% end %>
+        </tbody>
+  </table>
 
