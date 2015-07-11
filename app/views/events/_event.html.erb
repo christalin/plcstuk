@@ -18,5 +18,21 @@
         </tr>
         <% end %>
         </tbody>
-  </table>
+</table>
 
+<table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>Action ID</th>
+          <th>Action Item</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @checklists.each do |checklist| %>
+        <tr>
+          <td><%= checklist.actionid %></td>
+          <td><%= checklist.actionitem %></td>
+        </tr>
+        <% end %>
+        </tbody>
+  </table>
