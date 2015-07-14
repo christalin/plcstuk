@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Chklistdata</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Evntid</th>
+      <th>Chklstid</th>
+      <th>Assignedto</th>
+      <th>Completed</th>
+      <th>Comments</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @chklistdata.each do |chklistdatum| %>
+      <tr>
+        <td><%= chklistdatum.evntid %></td>
+        <td><%= chklistdatum.chklstid %></td>
+        <td><%= chklistdatum.assignedto %></td>
+        <td><%= chklistdatum.completed %></td>
+        <td><%= chklistdatum.comments %></td>
+        <td><%= link_to 'Show', chklistdatum %></td>
+        <td><%= link_to 'Edit', edit_chklistdatum_path(chklistdatum) %></td>
+        <td><%= link_to 'Destroy', chklistdatum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Chklistdatum', new_chklistdatum_path %>

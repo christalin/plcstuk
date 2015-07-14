@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Evntid:</strong>
+  <%= @chklistdatum.evntid %>
+</p>
+
+<p>
+  <strong>Chklstid:</strong>
+  <%= @chklistdatum.chklstid %>
+</p>
+
+<p>
+  <strong>Assignedto:</strong>
+  <%= @chklistdatum.assignedto %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @chklistdatum.completed %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @chklistdatum.comments %>
+</p>
+
+<%= link_to 'Edit', edit_chklistdatum_path(@chklistdatum) %> |
+<%= link_to 'Back', chklistdata_path %>
