@@ -52,6 +52,6 @@ group :development, :test do
 
   gem 'font-awesome-rails'
 
-  gem 'paperclip'
+  gem 'paperclip', '~> 4.2.0'
 end
 
