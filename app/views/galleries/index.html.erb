@@ -1,6 +1,9 @@
 <%= link_to 'New Gallery', new_gallery_path %>
-<ul class="nav navbar-nav">
+<%= will_paginate @galleries %>
+<!-- , previous_label: h("<"), next_label: h(">")  -->
 
+
+<ul class="nav navbar-nav">
 
 
     <% @galleries.each do |gallery| %>
@@ -9,7 +12,7 @@
     <li>
   
    
-  <div class="thumbnail thumbnail-size has-tooltip" title="Thats what this widget is">
+  <div class="thumbnail thumbnail-size has-tooltip" title='<%= gallery.title %>'>
 
         <%= image_tag gallery.image.url(:original), class: "img-responsive" %>
         <%= gallery.title %>
@@ -26,5 +29,7 @@
             <% end %>
          
 </ul>
+
+
 
         

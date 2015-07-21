@@ -1,9 +1,8 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @gallery.title %>
-</p>
+<div class="row">
+<div class="col-md-6">
+<%= image_tag @gallery.image.url(:original), class: "img-responsive" %>
+</div>
+</div>
 
 <%= link_to 'Edit', edit_gallery_path(@gallery) %> |
 <%= link_to 'Back', galleries_path %>
