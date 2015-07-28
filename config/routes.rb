@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :galleries
-  resources :chklistdata
   resources :events
   devise_for :users
   root 'pages#home'

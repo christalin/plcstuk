@@ -9,39 +9,35 @@
   <dd><%= @event.description %></dd>
 </dl>
 
-<%= link_to "Checklist", new_chklistdatum_path %>
 
 <div class="col-md-4">
   <h3 class="text-center">
     Checklist
   </h3>
 
-<%= simple_form_for(@chklistdatum) do |f| %>) 
-  <%= f.error_notification %>
 
 <table class="table table-bordered">
       <thead>
         <tr>
           <th>Action ID</th>
           <th>Action Item</th>
-          <th>Assignedto</th>
-          <th>Completed</th>
-          <th>Comments</th>
-        </tr>
+                  </tr>
       </thead>
       <tbody>
         <% @checklists.each do |checklist| %>
         <tr>
           <td><%= checklist.actionid %></td>
           <td><%= checklist.actionitem %></td>
-          <td><%= f.input :assignedto, required: true  %></td>
         </tr>
         <% end %>
         </tbody>
   </table>
 
-  <% end %>
 
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
+
+
+
+

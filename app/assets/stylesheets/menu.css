@@ -1,4 +1,8 @@
  .navbar-default-bg{
-  background-color: #FC9A24 !important;
+  background-color: #232F3E !important;
   color: #333333 !important;
 }
+
+a:hover {
+  color: white !important;
+  }

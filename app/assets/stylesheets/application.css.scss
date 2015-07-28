@@ -15,3 +15,25 @@
  *= require_self
  */
 @import "menu";
+
+body {
+	background: #A7ACB2;
+}
+
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 400px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+/*full width container*/
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+.carousel-control:hover, .carousel-control:focus {
+	opacity: .2;
+}
