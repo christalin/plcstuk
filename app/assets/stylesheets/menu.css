@@ -1,8 +1,8 @@
- .navbar-default-bg{
+/* .navbar-default-bg{
   background-color: #232F3E !important;
   color: #333333 !important;
-}
+}*/
 
 a:hover {
-  color: white !important;
+  color: orange !important;
   }

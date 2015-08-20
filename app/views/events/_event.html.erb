@@ -1,3 +1,4 @@
+<div class="box-table">
 <table class="table table-bordered">
       <thead>
         <tr>
@@ -15,4 +16,31 @@
         </tr>
         <% end %>
         </tbody>
-</table>
+</table> 
+</div>
+
+
+
+<!--    <% @events.each do |event| %>
+       <div class="col-md-3">
+
+  
+   
+  <div class="thumbnail thumbnail-size has-tooltip" title='<%= event.uploadedby %>'>
+
+        
+<li>
+
+        <%= link_to event.name, event_path(event) %>
+        <%= event.eventdate %>
+        <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </li>
+         </div>
+
+       </div>
+            
+
+
+            <% end %> -->
+         
+
