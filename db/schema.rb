@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150716022521) do
+ActiveRecord::Schema.define(version: 20150820053634) do
 
   create_table "checklists", force: :cascade do |t|
     t.string   "actionid"
@@ -28,6 +28,15 @@ ActiveRecord::Schema.define(version: 20150716022521) do
     t.string   "comments"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "eventchecklists", force: :cascade do |t|
+    t.string   "eventid"
+    t.string   "checklistid"
+    t.boolean  "completed"
+    t.string   "comments"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "events", force: :cascade do |t|

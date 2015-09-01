@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :eventchecklists
   resources :galleries
   resources :events
   devise_for :users

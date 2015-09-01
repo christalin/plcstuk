@@ -1,13 +1,26 @@
-<dl class="dl-horizontal">
-  <dt>Name</dt>
-  <dd><%= @event.name %></dd>
-   <dt>Conductedby</dt>
-  <dd><%= @event.conductedby %></dd>
-  <dt>Phone Nos</dt>
-  <dd><%= @event.phonenos %></dd>
-  <dt>Description</dt>
-  <dd><%= @event.description %></dd>
-</dl>
+
+
+
+<div class="responstable">
+<table class="table responstable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Conductedby</th>
+          <th>PhoneNos</th>
+          <th>Description</th>
+       </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><%= @event.name %></td>
+          <td><%= @event.conductedby %></td>
+          <td><%= @event.phonenos %></td>
+          <td><%= @event.description %></td>
+        </tr>
+        </tbody>
+</table> 
+</div>
 
 
 <div class="col-md-4">

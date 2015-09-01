@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Eventid:</strong>
+  <%= @eventchecklist.eventid %>
+</p>
+
+<p>
+  <strong>Checklistid:</strong>
+  <%= @eventchecklist.checklistid %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @eventchecklist.completed %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @eventchecklist.comments %>
+</p>
+
+<%= link_to 'Edit', edit_eventchecklist_path(@eventchecklist) %> |
+<%= link_to 'Back', eventchecklists_path %>

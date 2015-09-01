@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Eventchecklists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Eventid</th>
+      <th>Checklistid</th>
+      <th>Completed</th>
+      <th>Comments</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @eventchecklists.each do |eventchecklist| %>
+      <tr>
+        <td><%= eventchecklist.eventid %></td>
+        <td><%= eventchecklist.checklistid %></td>
+        <td><%= eventchecklist.completed %></td>
+        <td><%= eventchecklist.comments %></td>
+        <td><%= link_to 'Show', eventchecklist %></td>
+        <td><%= link_to 'Edit', edit_eventchecklist_path(eventchecklist) %></td>
+        <td><%= link_to 'Destroy', eventchecklist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Eventchecklist', new_eventchecklist_path %>
