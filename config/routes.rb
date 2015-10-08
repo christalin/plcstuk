@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  resources :vendors
   resources :eventchecklists
   resources :galleries
   resources :events
+  resources :vendor
   devise_for :users
   root 'pages#home'
 

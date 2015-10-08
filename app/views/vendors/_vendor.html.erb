@@ -1,0 +1,23 @@
+<div class="box-table">
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+            <th>Address</th>
+            <th>Phoneno</th>
+            <th>Comments</th>
+		</tr>	
+    </thead>
+    <tbody>
+    	<% @vendors.each do |vendor| %>
+    	<tr>
+    		<td><%= link_to vendor.name, vendor_path(vendor) %></td>
+            <td><%= vendor.address %></td>
+            <td><%= vendor.phoneno %></td>
+            <td><%= vendor.comments %></td>
+     	</tr>
+    	<% end %>	
+    </tbody>			
+</table>
+</div>
+

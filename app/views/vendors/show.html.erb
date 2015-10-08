@@ -1,0 +1,23 @@
+<div class="responstable">
+<table class="table responstable">
+	<thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Phone Number</th>
+          <th>Description</th>
+        </tr>
+    </thead>    
+    <tbody>
+    	<tr>
+    		<td><%= @vendor.name %></td>
+            <td><%= @vendor.address %></td>
+            <td><%= @vendor.phoneno %></td>
+            <td><%= @vendor.comments %></td>
+    	</tr>	
+    </tbody>	
+</table>
+</div>
+
+<%= link_to 'Edit', edit_vendor_path(@vendor) %> |
+<%= link_to 'Back', vendors_path %>

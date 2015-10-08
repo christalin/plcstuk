@@ -12,10 +12,10 @@
     <li>
   
    
-  <div class="thumbnail thumbnail-size has-tooltip" title='<%= gallery.title %>'>
+  <div class="thumbnail thumbnail-size has-tooltip light-box" title='<%= gallery.title %>'>
 
         <%= image_tag gallery.image.url(:original), class: "img-responsive" %>
-
+<a href='<%= gallery.image.url %>' data-lightbox='roadtrip'>Image #2</a>
 
         <%= gallery.title %>
         <%= link_to 'Show', gallery %>
@@ -33,5 +33,5 @@
 </ul>
 
 
-<script src="/assets/javascripts/lightbox.js"></script>
+<!--<script src="/assets/javascripts/lightbox.js"></script>-->
         
