@@ -75,11 +75,11 @@
     }
   
     th {
-      display: none; // hide all the table header for mobile
+ //     display: none; // hide all the table header for mobile
             padding: 1em;  
       &:first-child { // show the first table header for mobile
         display: table-cell;
-        text-align: center;
+       // text-align: center;
       }
       &:nth-child(2) { // show the second table header but replace the content with the data-th from the markup for mobile
         display: table-cell;
@@ -99,7 +99,7 @@
       max-width: 7em;
       &:first-child { 
         display: table-cell; // display the first one as a table cell (radio button) for mobile
-        text-align: center;
+       // text-align: center;
         
       }
         

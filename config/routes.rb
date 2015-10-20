@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :yearlycalendars
+  resources :plcdirectories
   resources :vendors
   resources :eventchecklists
   resources :galleries

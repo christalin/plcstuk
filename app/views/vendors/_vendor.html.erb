@@ -1,13 +1,17 @@
-<div class="box-table">
-<table class="table table-bordered">
+<!--<div class="box-table">
+<table class="table table-bordered"> -->
+
+<div class="responstable">
+<table class="table responstable">    
 	<thead>
 		<tr>
-			<th>Name</th>
-            <th>Address</th>
-            <th>Phoneno</th>
-            <th>Comments</th>
+			<th>Vendor</th>
+            <th>Key Contact</th>
+            <th>Phone Number</th>
+            <th>Event</th>
 		</tr>	
     </thead>
+
     <tbody>
     	<% @vendors.each do |vendor| %>
     	<tr>
@@ -15,9 +19,13 @@
             <td><%= vendor.address %></td>
             <td><%= vendor.phoneno %></td>
             <td><%= vendor.comments %></td>
-     	</tr>
+            <td><%= link_to 'Edit', edit_vendor_path(vendor) %></td>
+            <td><%= link_to 'Delete', vendor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
     	<% end %>	
     </tbody>			
 </table>
 </div>
+
+
 

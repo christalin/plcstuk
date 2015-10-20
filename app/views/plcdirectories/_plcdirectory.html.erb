@@ -1,0 +1,26 @@
+<div class="responstable">
+<table class="table responstable">    
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Term</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @plcdirectories.each do |plcdirectory| %>
+      <tr>
+        <td><%= plcdirectory.name %></td>
+        <td><%= plcdirectory.phone %></td>
+        <td><%= plcdirectory.email %></td>
+        <td><%= plcdirectory.term %></td>
+        <td><%= link_to 'Edit', edit_plcdirectory_path(plcdirectory) %></td>
+        <td><%= link_to 'Delete', plcdirectory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+

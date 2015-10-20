@@ -1,6 +1,9 @@
-<div class="box-table">
-<table class="table table-bordered">
-      <thead>
+<!--<div class="box-table">
+<table class="table table-bordered"> -->
+
+<div class="responstable">
+<table class="table responstable">
+     <thead>
         <tr>
           <th>Event Name</th>
           <th>Event Date</th>
@@ -11,7 +14,7 @@
       	<% @events.each do |event| %>
         <tr>
           <td><%= link_to event.name, event_path(event) %></td>
-          <td><%= event.eventdate %> ago</td>
+          <td><%= event.eventdate %></td>
           <td><%= event.uploadedby %></td>
         </tr>
         <% end %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151007220318) do
+ActiveRecord::Schema.define(version: 20151019210902) do
 
   create_table "checklists", force: :cascade do |t|
     t.string   "actionid"
@@ -60,6 +60,15 @@ ActiveRecord::Schema.define(version: 20151007220318) do
     t.datetime "image_updated_at"
   end
 
+  create_table "plcdirectories", force: :cascade do |t|
+    t.string   "name"
+    t.string   "phone"
+    t.string   "email"
+    t.string   "term"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -83,6 +92,14 @@ ActiveRecord::Schema.define(version: 20151007220318) do
     t.string   "address"
     t.string   "phoneno"
     t.string   "comments"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "yearlycalendars", force: :cascade do |t|
+    t.string   "month"
+    t.string   "event1"
+    t.string   "event2"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
