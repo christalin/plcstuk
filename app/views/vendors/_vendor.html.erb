@@ -5,10 +5,10 @@
 <table class="table responstable">    
 	<thead>
 		<tr>
-			<th>Vendor</th>
-            <th>Key Contact</th>
-            <th>Phone Number</th>
-            <th>Event</th>
+			<th>VENDOR</th>
+            <th>KEY CONTACT</th>
+            <th>PHONE NUMBER</th>
+            <th>EVENT</th>
 		</tr>	
     </thead>
 
@@ -19,8 +19,8 @@
             <td><%= vendor.address %></td>
             <td><%= vendor.phoneno %></td>
             <td><%= vendor.comments %></td>
-            <td><%= link_to 'Edit', edit_vendor_path(vendor) %></td>
-            <td><%= link_to 'Delete', vendor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to '<i class="fa fa-pencil"></i>'.html_safe, edit_vendor_path(vendor) %></td>
+            <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, vendor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
     	<% end %>	
     </tbody>			

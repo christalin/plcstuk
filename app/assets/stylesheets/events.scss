@@ -66,8 +66,9 @@
 
 .responstable {
     margin: 1em 0;
-    width: 100%;
-    overflow: hidden;  
+    width: 80%;
+    overflow: hidden; 
+    background-color: #FFFFFF; 
     
     tr {
       &:nth-child(odd) { // highlight the odd rows with a color

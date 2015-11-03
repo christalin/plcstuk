@@ -57,5 +57,8 @@ group :development, :test do
   gem 'will_paginate', '> 3.0'
 
   gem 'lightbox2-rails'
+
+  gem 'auto_html'
+
 end
 

@@ -2,9 +2,9 @@
 <table class="table responstable">
   <thead>
     <tr>
-      <th>Month</th>
-      <th>Event1</th>
-      <th>Event2</th>
+      <th>MONTH</th>
+      <th>EVENT1</th>
+      <th>EVENT2</th>
     </tr>
   </thead>
 
@@ -14,8 +14,8 @@
         <td><%= yearlycalendar.month %></td>
         <td><%= yearlycalendar.event1 %></td>
         <td><%= yearlycalendar.event2 %></td>
-        <td><%= link_to 'Edit', edit_yearlycalendar_path(yearlycalendar) %></td>
-        <td><%= link_to 'Delete', yearlycalendar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '<i class="fa fa-pencil"></i>'.html_safe, edit_yearlycalendar_path(yearlycalendar) %></td>
+        <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, yearlycalendar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

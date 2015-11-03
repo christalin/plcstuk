@@ -13,6 +13,7 @@
  *= require_tree .
  *= require font-awesome
  *= require_self
+
  */
 @import "menu";
 @import "lightbox";
@@ -38,3 +39,5 @@
 .carousel-control:hover, .carousel-control:focus {
 	opacity: .2;
 }
+
+

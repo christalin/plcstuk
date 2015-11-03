@@ -2,22 +2,22 @@
 <table class="table responstable">    
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Phone</th>
-      <th>Email</th>
-      <th>Term</th>
+      <th>NAME</th>
+      <th>PHONE</th>
+      <th>EMAIL</th>
+      <th>TERM</th>
     </tr>
   </thead>
 
   <tbody>
     <% @plcdirectories.each do |plcdirectory| %>
       <tr>
-        <td><%= plcdirectory.name %></td>
+        <td class="has-tooltip" title='<%= plcdirectory.phone %>'><%= plcdirectory.name %></td>
         <td><%= plcdirectory.phone %></td>
         <td><%= plcdirectory.email %></td>
         <td><%= plcdirectory.term %></td>
-        <td><%= link_to 'Edit', edit_plcdirectory_path(plcdirectory) %></td>
-        <td><%= link_to 'Delete', plcdirectory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '<i class="fa fa-pencil"></i>'.html_safe, edit_plcdirectory_path(plcdirectory) %></td>
+        <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, plcdirectory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

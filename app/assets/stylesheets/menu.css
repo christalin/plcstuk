@@ -1,8 +1,68 @@
-/* .navbar-default-bg{
+ .navbar-default-bg{
   background-color: #232F3E !important;
   color: #333333 !important;
-}*/
+}
 
 a:hover {
   color: orange !important;
+  background-color: #F8F8F8 !important;
   }
+
+.navbar-colors {
+	background-color: #F8F8F8;
+    color: black;
+	
+}
+  
+
+.tooltip-style{
+	font-weight: bold;
+	cursor: pointer;
+	background-color: #664021;
+
+}
+
+// CAROUSEL //
+
+.carousel-inner > .item {
+  height: 550px;
+  background-size: cover;
+  width: 100%;
+}
+
+.carousel-inner > .item > img {
+  height: 50%;
+  min-width: 100%;
+  width: auto;
+}
+
+.carousel-caption {
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-inner {
+  h2 {
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 40px;
+  }
+  .btn {
+    margin-bottom: 110px;
+  }
+}
+
+.project {
+  color: orange;
+  background-color: #f7fafa;
+  border-bottom: 1px solid #d9d9de;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}

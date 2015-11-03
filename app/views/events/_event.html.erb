@@ -5,9 +5,9 @@
 <table class="table responstable">
      <thead>
         <tr>
-          <th>Event Name</th>
-          <th>Event Date</th>
-          <th>Uploadedby</th>
+          <th>EVENT NAME</th>
+          <th>EVENT DATE</th>
+   <!--       <th>Uploadedby</th> -->
         </tr>
       </thead>
       <tbody>
@@ -15,7 +15,10 @@
         <tr>
           <td><%= link_to event.name, event_path(event) %></td>
           <td><%= event.eventdate %></td>
-          <td><%= event.uploadedby %></td>
+       <!--   <td><%= event.uploadedby %></td> -->
+          <td><%= link_to '<i class="fa fa-eye"></i>'.html_safe, event %></td>
+          <td><%= link_to '<i class="fa fa-pencil"></i>'.html_safe, edit_event_path(event) %></td>
+          <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
         <% end %>
         </tbody>
