@@ -1,5 +1,5 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
+
+ /** This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
@@ -14,13 +14,13 @@
  *= require font-awesome
  *= require_self
 
- */
 @import "menu";
 @import "lightbox";
 
-/*body {
-	background: #A7ACB2;
-}*/
+*/
+
+
+
 
 .carousel .item {
     width: 100%; /*slider width*/
