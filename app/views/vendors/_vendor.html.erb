@@ -19,8 +19,10 @@
             <td><%= vendor.address %></td>
             <td><%= vendor.phoneno %></td>
             <td><%= vendor.comments %></td>
+            <% if current_user == @tester1@gmail.com %> 
             <td><%= link_to '<i class="fa fa-pencil"></i>'.html_safe, edit_vendor_path(vendor) %></td>
             <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, vendor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <% end %>
         </tr>
     	<% end %>	
     </tbody>			

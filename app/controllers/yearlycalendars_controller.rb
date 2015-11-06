@@ -28,7 +28,7 @@ class YearlycalendarsController < ApplicationController
 
     respond_to do |format|
       if @yearlycalendar.save
-        format.html { redirect_to @yearlycalendar, notice: 'Yearlycalendar was successfully created.' }
+        format.html { redirect_to @yearlycalendar, notice: 'Calendar is successfully created.' }
         format.json { render :show, status: :created, location: @yearlycalendar }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class YearlycalendarsController < ApplicationController
   def update
     respond_to do |format|
       if @yearlycalendar.update(yearlycalendar_params)
-        format.html { redirect_to @yearlycalendar, notice: 'Yearlycalendar was successfully updated.' }
+        format.html { redirect_to @yearlycalendar, notice: 'Calendar is successfully updated.' }
         format.json { render :show, status: :ok, location: @yearlycalendar }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class YearlycalendarsController < ApplicationController
   def destroy
     @yearlycalendar.destroy
     respond_to do |format|
-      format.html { redirect_to yearlycalendars_url, notice: 'Yearlycalendar was successfully destroyed.' }
+      format.html { redirect_to yearlycalendars_url, notice: 'Calendar is successfully destroyed.' }
       format.json { head :no_content }
     end
   end

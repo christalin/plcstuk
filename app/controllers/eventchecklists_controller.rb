@@ -28,7 +28,7 @@ class EventchecklistsController < ApplicationController
 
     respond_to do |format|
       if @eventchecklist.save
-        format.html { redirect_to @eventchecklist, notice: 'Eventchecklist was successfully created.' }
+        format.html { redirect_to @eventchecklist, notice: 'Event is successfully created.' }
         format.json { render :show, status: :created, location: @eventchecklist }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class EventchecklistsController < ApplicationController
   def update
     respond_to do |format|
       if @eventchecklist.update(eventchecklist_params)
-        format.html { redirect_to @eventchecklist, notice: 'Eventchecklist was successfully updated.' }
+        format.html { redirect_to @eventchecklist, notice: 'Event is successfully updated.' }
         format.json { render :show, status: :ok, location: @eventchecklist }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class EventchecklistsController < ApplicationController
   def destroy
     @eventchecklist.destroy
     respond_to do |format|
-      format.html { redirect_to eventchecklists_url, notice: 'Eventchecklist was successfully destroyed.' }
+      format.html { redirect_to eventchecklists_url, notice: 'Event is successfully destroyed.' }
       format.json { head :no_content }
     end
   end

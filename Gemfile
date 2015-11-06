@@ -60,5 +60,8 @@ group :development, :test do
 
   gem 'auto_html'
 
+  gem 'fullcalendar-rails'
+
+
 end
 

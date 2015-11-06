@@ -28,7 +28,7 @@ class PlcdirectoriesController < ApplicationController
 
     respond_to do |format|
       if @plcdirectory.save
-        format.html { redirect_to @plcdirectory, notice: 'Plcdirectory was successfully created.' }
+        format.html { redirect_to @plcdirectory, notice: 'Member is successfully created.' }
         format.json { render :show, status: :created, location: @plcdirectory }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class PlcdirectoriesController < ApplicationController
   def update
     respond_to do |format|
       if @plcdirectory.update(plcdirectory_params)
-        format.html { redirect_to @plcdirectory, notice: 'Plcdirectory was successfully updated.' }
+        format.html { redirect_to @plcdirectory, notice: 'Member is successfully updated.' }
         format.json { render :show, status: :ok, location: @plcdirectory }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class PlcdirectoriesController < ApplicationController
   def destroy
     @plcdirectory.destroy
     respond_to do |format|
-      format.html { redirect_to plcdirectories_url, notice: 'Plcdirectory was successfully destroyed.' }
+      format.html { redirect_to plcdirectories_url, notice: 'Member is successfully destroyed.' }
       format.json { head :no_content }
     end
   end
