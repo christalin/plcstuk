@@ -12,8 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
 //= require twitter/bootstrap
 //= require turbolinks
-//= require fullcalendar
-//= require yearlycalendars
 //= require_tree .
+
+$('.dropdown-toggle').dropdown()
