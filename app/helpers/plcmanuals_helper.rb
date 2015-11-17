@@ -1,0 +1,2 @@
+module PlcmanualsHelper
+end

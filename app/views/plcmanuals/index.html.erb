@@ -1,0 +1,40 @@
+  
+    <!--<% @plcmanuals.each do |plcmanual| %>
+      <h3><%= link_to "PLC Manual",  plcmanual.attachment_url(format: 'pdf') %></h3>
+    <% end %> --> 
+
+  <iframe src="http://localhost:3000/uploads/plcmanual/attachment/3/New_Member_Orientation_-_Overview_-_Google_Docs.pdf" embed='true' width="100%" height="800" >
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+
+
+<!-- table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Attachment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @plcmanuals.each do |plcmanual| %>
+      <tr>
+        <td><%= plcmanual.name %></td>
+        <td><%= link_to "Download Manual", plcmanual.attachment_url %></td>
+        <td><%= link_to 'Show', plcmanual %></td>
+        <td><%= link_to 'Edit', edit_plcmanual_path(plcmanual) %></td>
+        <td><%= link_to 'Destroy', plcmanual, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>-->
+
+<br>
+
+<% if current_user.admin  %>
+
+
+   <%= link_to 'New Plcmanual', new_plcmanual_path %>
+
+<% end %>   

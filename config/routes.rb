@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :plcmanuals
   resources :hnccontacts
   resources :yearlycalendars
   resources :plcdirectories

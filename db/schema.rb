@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151105014953) do
+ActiveRecord::Schema.define(version: 20151117060205) do
 
   create_table "checklists", force: :cascade do |t|
     t.string   "actionid"
@@ -69,11 +69,25 @@ ActiveRecord::Schema.define(version: 20151105014953) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "manuals", force: :cascade do |t|
+    t.string   "name"
+    t.string   "attachment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "plcdirectories", force: :cascade do |t|
     t.string   "name"
     t.string   "phone"
     t.string   "email"
     t.string   "term"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "plcmanuals", force: :cascade do |t|
+    t.string   "name"
+    t.string   "attachment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -100,6 +114,7 @@ ActiveRecord::Schema.define(version: 20151105014953) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "admin"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
@@ -112,6 +127,7 @@ ActiveRecord::Schema.define(version: 20151105014953) do
     t.string   "comments"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "keycontact"
   end
 
   create_table "yearlycalendars", force: :cascade do |t|

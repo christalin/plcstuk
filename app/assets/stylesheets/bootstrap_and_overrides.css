@@ -17,6 +17,9 @@
 /* .navbar-default-bg{
 	background-color: #FC9A24 !important;
 }*/
+
+@import "bootstrap";
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;

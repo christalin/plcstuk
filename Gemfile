@@ -62,6 +62,10 @@ group :development, :test do
 
   gem 'fullcalendar-rails'
 
+  gem 'carrierwave', '~> 0.9'
+
+  gem 'bootstrap-sass', '~> 2.3.2'
+
 
 end
 
