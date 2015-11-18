@@ -16,8 +16,10 @@
         <td><%= hnccontact.name %></td>
         <td><%= hnccontact.phone %></td>
         <td><%= hnccontact.email %></td>
-        <td><%= link_to '<i class="fa fa-pencil"></i>'.html_safe, edit_hnccontact_path(hnccontact) %></td>
-        <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, hnccontact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if current_user.admin %>
+           <td><%= link_to '<i class="fa fa-pencil"></i>'.html_safe, edit_hnccontact_path(hnccontact) %></td>
+           <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, hnccontact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>   
       </tr>
     <% end %>
   </tbody>
