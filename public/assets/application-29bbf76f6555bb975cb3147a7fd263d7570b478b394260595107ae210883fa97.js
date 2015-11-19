@@ -10833,17 +10833,6 @@ return jQuery;
   }
 
 })( jQuery );
-(function() {
-  jQuery(function() {
-    $("a[rel~=popover], .has-popover").popover();
-    return $("a[rel~=tooltip], .has-tooltip").tooltip();
-  });
-
-  $(document).on("page:change", function() {
-    return $("#calendar").fullCalendar();
-  });
-
-}).call(this);
 /* ========================================================================
  * Bootstrap: transition.js v3.2.0
  * http://getbootstrap.com/javascript/#transitions
@@ -13741,6 +13730,17 @@ return jQuery;
     supported: browserSupportsTurbolinks,
     EVENTS: clone(EVENTS)
   };
+
+}).call(this);
+(function() {
+  jQuery(function() {
+    $("a[rel~=popover], .has-popover").popover();
+    return $("a[rel~=tooltip], .has-tooltip").tooltip();
+  });
+
+  $(document).on("page:change", function() {
+    return $("#calendar").fullCalendar();
+  });
 
 }).call(this);
 (function() {
@@ -23965,7 +23965,4 @@ jQuery(document).ready(function(){
 
 
 
-
-$(document).ready(function(){
-    $('.dropdown-toggle').dropdown();
-});
+$('.dropdown-toggle').dropdown();
