@@ -1,0 +1,30 @@
+<!--<div class="col-md-3">
+   <div class="thumbnail">
+        <% @pastads.each do |pastad| %>   
+           <%= image_tag pastad.image.url(:original) %>
+            <div class="caption">
+              <p><strong><%= pastad.name %></strong></p>
+              <p><strong><%= pastad.date %></strong></p>
+           </div>
+  
+        <% end %>   
+       
+   </div> 
+</div> -->
+
+<div class="col-md-3">
+   <div class="thumbnail">
+        <%= link_to pastads_path(pastad) do %>
+            <a href=<%=pastad.image.url(:original)%>>
+            <%= image_tag pastad.image.url(:original) %></a>
+        <% end %>
+        <div class="caption">
+           <p><strong><%= pastad.name %></p>
+           <p><strong><%= pastad.date %></p>
+           <% if current_user.admin %>
+              <td><%= link_to '<i class="fa fa-pencil"></i>'.html_safe, edit_pastad_path(pastad) %></td>
+              <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, pastad, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+           <% end %>
+        </div>  
+    </div>
+</div>    
