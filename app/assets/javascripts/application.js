@@ -20,7 +20,6 @@
 
 
 
-
 $(document).ready(function() {
 	alert("test");
 	 $('[data-toggle="popover"]').popover()
