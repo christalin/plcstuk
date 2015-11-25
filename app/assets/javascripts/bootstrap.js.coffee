@@ -3,7 +3,3 @@ jQuery ->
   $("a[rel~=tooltip], .has-tooltip").tooltip()
 
 
-
-
-$(document).on "page:change" , ->
-  $("#calendar").fullCalendar()

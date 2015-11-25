@@ -11,15 +11,24 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
-//= require twitter/bootstrap
+//= require twitter/bootstrap	
 //= require turbolinks
 //= require_tree .
 
-ready = ->
-// functions
+
+
+
 
 $(document).ready(function() {
-    $(".dropdown-toggle").dropdown();
+	alert("test");
+	 $('[data-toggle="popover"]').popover()
+    $(".dropdown-toggle").dropdown();   
+     $("#pastad_date").datepicker();
+    alert('test');
+
 });
+
+
 

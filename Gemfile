@@ -68,6 +68,7 @@ group :development, :test do
 
   gem 'cancan'
 
-
+  gem 'jquery-ui-rails'
+  
 end
 
