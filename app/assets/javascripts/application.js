@@ -1,4 +1,4 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
+	// This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
 // Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
@@ -11,8 +11,8 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery-ui
 //= require jquery_ujs
+//= require jquery-ui
 //= require twitter/bootstrap	
 //= require turbolinks
 //= require_tree .
@@ -20,14 +20,16 @@
 
 
 
-$(document).ready(function() {
-	alert("test");
-	 $('[data-toggle="popover"]').popover()
+var ready;
+
+ready = function() {
+	 $('[data-toggle="popover"]').popover();
     $(".dropdown-toggle").dropdown();   
      $("#pastad_date").datepicker();
-    alert('test');
 
-});
+};
 
+$(document).ready(ready);
+$(document).on('page:load', ready); 
 
 

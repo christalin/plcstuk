@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151120220306) do
+ActiveRecord::Schema.define(version: 20151201150606) do
 
   create_table "checklists", force: :cascade do |t|
     t.string   "actionid"
