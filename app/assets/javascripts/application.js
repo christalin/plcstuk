@@ -24,6 +24,7 @@ var ready;
 
 ready = function() {
 	 $('[data-toggle="popover"]').popover();
+	 $('.collapse').collapse('toggle');
     $(".dropdown-toggle").dropdown();   
      $("#pastad_date").datepicker();
 
