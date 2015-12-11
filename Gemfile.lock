@@ -85,6 +85,8 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    dropbox-sdk (1.6.5)
+      json
     erubis (2.7.0)
     execjs (2.5.2)
     font-awesome-rails (4.3.0.0)
@@ -216,6 +218,7 @@ DEPENDENCIES
   carrierwave (~> 0.9)
   coffee-rails (~> 4.1.0)
   devise
+  dropbox-sdk
   font-awesome-rails
   fullcalendar-rails
   jbuilder (~> 2.0)

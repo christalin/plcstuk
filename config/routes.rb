@@ -20,6 +20,9 @@ Rails.application.routes.draw do
     member do
       put :change
   end
+
+  get "plcmanuals/NewMemberorientation_pdf"
+
   end  
 
   # The priority is based upon order of creation: first created -> highest priority.

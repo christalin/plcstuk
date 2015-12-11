@@ -10,6 +10,7 @@ module Plcstuk
   class Application < Rails::Application
 
     config.assets.paths << "#{Rails}/assets/fonts"
+    config.assets.paths << "#{Rails}/assets/public"
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

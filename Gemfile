@@ -69,6 +69,8 @@ group :development, :test do
   gem 'cancan'
 
   gem 'jquery-ui-rails'
+
+  gem 'dropbox-sdk'
   
 end
 
