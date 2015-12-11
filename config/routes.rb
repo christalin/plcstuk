@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+
   resources :pastads
   resources :plcmanuals
   resources :hnccontacts
@@ -15,6 +16,8 @@ Rails.application.routes.draw do
 
   get 'about' => 'pages#about'
   get 'adguidelines' => 'pages#adguidelines'
+  get 'dropbox' => 'pages#dropbox'
+
 
   resources :tasks do
     member do
