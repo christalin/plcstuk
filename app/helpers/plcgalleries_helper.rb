@@ -1,0 +1,2 @@
+module PlcgalleriesHelper
+end

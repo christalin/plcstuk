@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151201150606) do
+ActiveRecord::Schema.define(version: 20151211135101) do
 
   create_table "checklists", force: :cascade do |t|
     t.string   "actionid"
@@ -94,6 +94,15 @@ ActiveRecord::Schema.define(version: 20151201150606) do
     t.string   "term"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "plcgalleries", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "dropbox_uid"
+    t.string   "email"
+    t.string   "dropbox_token"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "plcmanuals", force: :cascade do |t|
