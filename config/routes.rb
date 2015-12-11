@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   
-  resources :plcgalleries
   resources :pastads
   resources :plcmanuals
   resources :hnccontacts
