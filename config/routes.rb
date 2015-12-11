@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   
 
+  get 'auth/login'
+
+  get 'auth/dropbox_callback'
+
+  get 'auth/logout'
+
   resources :pastads
   resources :plcmanuals
   resources :hnccontacts
