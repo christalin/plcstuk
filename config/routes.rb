@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   get 'auth/dropbox_callback'
 
   get 'auth/logout'
-
+  
+  resources :plcchecklists
   resources :pastads
   resources :plcmanuals
   resources :hnccontacts
@@ -22,6 +23,7 @@ Rails.application.routes.draw do
 
   get 'about' => 'pages#about'
   get 'adguidelines' => 'pages#adguidelines'
+  get 'courtyardlayout' => 'pages#courtyardlayout'
   get 'dropbox' => 'pages#dropbox'
 
 
