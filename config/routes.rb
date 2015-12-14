@@ -11,7 +11,6 @@ Rails.application.routes.draw do
   resources :pastads
   resources :plcmanuals
   resources :hnccontacts
-  resources :yearlycalendars
   resources :plcdirectories
   resources :vendors
   resources :eventchecklists
@@ -24,6 +23,7 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   get 'adguidelines' => 'pages#adguidelines'
   get 'courtyardlayout' => 'pages#courtyardlayout'
+  get 'plccalendar' => 'pages#plccalendar'
   get 'dropbox' => 'pages#dropbox'
 
 
