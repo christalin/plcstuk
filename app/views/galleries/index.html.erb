@@ -1,22 +1,9 @@
 <%= link_to 'New Image', new_gallery_path %>
-<br>
 <%= will_paginate @galleries %>
+<div class="row">
+	  <%= render @galleries %>
 
-
-<% @galleries.each do |gallery| %>
-      
-<div class="col-md-3">
-     <div class="thumbnail">
-          <a href=<%=gallery.image.url(:original)%>>
-             <%= image_tag gallery.image.url(:original)%></a>
-           <% if current_user.admin %>
-                <%= link_to 'Edit', edit_gallery_path(gallery) %>
-                <%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %>
-           <% end %> 
-  
-      </div>
-</div>             
+</div>          
  
   
-<% end %>
          

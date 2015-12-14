@@ -24,6 +24,9 @@ Rails.application.routes.draw do
   get 'adguidelines' => 'pages#adguidelines'
   get 'courtyardlayout' => 'pages#courtyardlayout'
   get 'plccalendar' => 'pages#plccalendar'
+  get 'planningchecklist' => 'pages#planningchecklist'
+  get 'budgettemplate' => 'pages#budgettemplate'
+  get 'volunteersignup' => 'pages#volunteersignup'
   get 'dropbox' => 'pages#dropbox'
 
 

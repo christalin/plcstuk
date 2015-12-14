@@ -1,0 +1,17 @@
+<div class="col-md-3">
+     <div class="thumbnail">
+
+
+        <%= link_to galleries_path(gallery) do %>
+
+                <a href=<%=gallery.image.url(:original)%>  >
+             <%= image_tag gallery.image.url(:original) %></a>
+               <% end %>
+
+           <% if current_user.admin %>
+                <%= link_to 'Edit', edit_gallery_path(gallery) %>
+                <%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %>
+           <% end %> 
+
+      </div>
+</div>   
