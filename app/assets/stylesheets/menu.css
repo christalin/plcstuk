@@ -30,7 +30,7 @@
 }
 
 .carousel-inner > .item > img {
-  height: 50%;
+  height: 100%;
   min-width: 100%;
   width: auto;
 }
