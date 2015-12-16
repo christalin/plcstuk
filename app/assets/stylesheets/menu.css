@@ -1,14 +1,18 @@
-a:hover {
-  color: orange !important;
-  background-color: #F8F8F8 !important;
-  }
 
 .navbar-colors {
-	background-color: #F8F8F8;
-    color: blue !important;
+	
+   
 	
 }
-  
+
+.container-fluid a,a:hover{
+  color: #2474A2 !important;
+}
+
+.menu-border {
+    height: 5px;
+    background-color: #2F94CD;
+}
 
 .tooltip-style{
 	font-weight: bold;
@@ -36,6 +40,7 @@ a:hover {
   right: 0;
   width: 100%;
   text-align: center;
+  color: #3276B1;
 }
 
 .carousel-inner {
@@ -53,11 +58,10 @@ a:hover {
     margin-bottom: 110px;
   }
 }
+.carousel-indicators >.active {background-color: #3276B1;}
 
-.project {
-  color: orange;
-  background-color: #f7fafa;
-  border-bottom: 1px solid #d9d9de;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+.project, .jumbotron {
+  color: #3276B1;
+  background-color: #fff;
+  
 }

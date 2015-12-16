@@ -3062,7 +3062,7 @@ input[type="button"].btn-block {
 .dropdown-menu > .active > a:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #428bca;
+  background-color: yellow;
   outline: 0;
 }
 .dropdown-menu > .disabled > a,
@@ -4401,9 +4401,9 @@ a.list-group-item.active > .badge,
   border-radius: 6px;
 }
 .jumbotron .container {
-  max-width: 100%;
+  max-width: 40%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .jumbotron {
     padding-top: 48px;
     padding-bottom: 48px;

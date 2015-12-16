@@ -3,9 +3,10 @@
 
 
         <%= link_to galleries_path(gallery) do %>
-
+                <div style= "width: 400px; height:400px">
                 <a href=<%=gallery.image.url(:original)%>  >
              <%= image_tag gallery.image.url(:original) %></a>
+           </div>
                <% end %>
 
            <% if current_user.admin %>
