@@ -85,6 +85,9 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    dotenv (2.0.1)
+    dotenv-rails (2.0.1)
+      dotenv (= 2.0.1)
     dropbox-sdk (1.6.5)
       json
     erubis (2.7.0)
@@ -224,6 +227,7 @@ DEPENDENCIES
   carrierwave (~> 0.9)
   coffee-rails (~> 4.1.0)
   devise
+  dotenv-rails
   dropbox-sdk
   font-awesome-rails
   fullcalendar-rails

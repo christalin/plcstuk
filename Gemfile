@@ -50,6 +50,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
   gem 'paperclip', '~> 4.2.0'
 
+  gem 'dotenv-rails', group: :development
+
   gem 'will_paginate', '> 3.0'
 
   gem 'lightbox2-rails'
