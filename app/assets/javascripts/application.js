@@ -27,6 +27,8 @@ ready = function() {
 	 $('.collapse').collapse('toggle');
     $(".dropdown-toggle").dropdown();   
      $("#pastad_date").datepicker();
+     $('.zoomTarget').zoomTarget();
+
 
 };
 

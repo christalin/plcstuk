@@ -1,18 +1,22 @@
-            <div class="col-md-4">
+<div class="col-md-4">
 
      <div class="thumbnail">
+       
+                       <div class="zoomTarget">
 
-
-        <%= link_to galleries_path(gallery) do %>
-
+       
+           <%= link_to galleries_path(gallery) do %>
                 <a href=<%=gallery.image.url(:large)%>  >
-             <%= image_tag gallery.image.url(:large) %></a>
+                <%= image_tag gallery.image.url(:large) %></a>
 
            <% if current_user.admin %>
                 <%= link_to 'Edit', edit_gallery_path(gallery) %>
                 <%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %>
            <% end %> 
           <% end %>
+                         </div>
+
       </div>
 
 </div>
+
