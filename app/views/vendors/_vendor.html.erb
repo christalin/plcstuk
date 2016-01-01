@@ -15,15 +15,19 @@
     <tbody>
     	<% @vendors.each do |vendor| %>
     	<tr>
-            <td>
-    		<div data-toggle="popover" title="address" data-content="<%= vendor.address %>"><%= vendor.name %></div>
-            </td> 
+            <td class="btn-link text-left">
+                <div tabindex="0" data-toggle="popover" data-trigger="focus" title="Address" 
+                data-content="<%= vendor.address %>" >
+
+                    <%= vendor.name %>
+                </div>
+    		</td> 
             <td><%= vendor.keycontact %></td>
             <td><%= vendor.phoneno %></td>
             <td><%= vendor.comments %></td>
             <% if current_user.admin %>
-               <td><%= link_to '<i class="fa fa-pencil"></i>'.html_safe, edit_vendor_path(vendor) %></td>
-               <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, vendor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+               <td class="btn-link text-left"><%= link_to '<i class="fa fa-pencil"></i>'.html_safe, edit_vendor_path(vendor) %></td>
+               <td class="btn-link text-left"><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, vendor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             <% end %>   
         </tr>
     	<% end %>	
