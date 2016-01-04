@@ -4,6 +4,8 @@
   <%= render "vendor" %>
 </div>  
 
-<div class="btn btn-primary">
-  <b><%= link_to 'New Vendor', new_vendor_path %></b>
-</div>  
+<% if current_user.admin %>
+   <div class="btn btn-success">
+       <b><%= link_to 'New Vendor', new_vendor_path %></b>
+   </div> 
+<% end %>    

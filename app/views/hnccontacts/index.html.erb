@@ -2,7 +2,9 @@
   <%= render "hnccontact" %>
 </div>
 
-<div class="btn btn-primary">
-   <b><%= link_to 'New Member', new_hnccontact_path %></b>
-</div>
+<% if current_user.admin %>
+   <div class="btn btn-success">
+        <b><%= link_to 'New Member', new_hnccontact_path %></b>
+   </div>
+<% end %>   
 
