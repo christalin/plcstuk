@@ -27,6 +27,7 @@ Rails.application.routes.draw do
   get 'planningchecklist' => 'pages#planningchecklist'
   get 'budgettemplate' => 'pages#budgettemplate'
   get 'volunteersignup' => 'pages#volunteersignup'
+  get 'socialmedia' => 'pages#socialmedia'
   get 'dropbox' => 'pages#dropbox'
 
 
